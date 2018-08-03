@@ -1,0 +1,10 @@
+@import "src/styles/utils";
+
+.wrapper {
+  @include media("<tablet") {
+    width: 100%;
+  }
+  margin: 0 auto;
+  width: 625px;
+  background: $oc-gray-5;
+}

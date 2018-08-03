@@ -1,0 +1,64 @@
+@import "src/styles/utils";
+
+.form {
+  display: flex;
+
+  flex-direction: column;
+
+  .Logo {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $oc-gray-8;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    .Line {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      .Label {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .Input {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        input {
+          outline: none;
+          border: 1px solid $oc-gray-6;
+          height: 2rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .Line + .Line {
+      //   margin-top: 0.5rem;
+    }
+
+    .Button {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      width: 100%;
+      background: $oc-gray-6;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: white;
+      user-select: none;
+      cursor: pointer;
+
+      &:hover {
+        background: $oc-gray-7;
+      }
+
+      &:active {
+        background: $oc-gray-8;
+      }
+    }
+  }
+}
